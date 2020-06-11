@@ -5,16 +5,16 @@ import entities.enums.Color;
 public class Rectangle extends Shape {
 
 	private Double width;
-	private Double heigth;
+	private Double height;
 
 	public Rectangle() {
 		super();
 	}
 
-	public Rectangle(Color color, Double width, Double heigth) {
+	public Rectangle(Color color, Double width, Double height) {
 		super(color);
 		this.width = width;
-		this.heigth = heigth;
+		this.height = height;
 	}
 
 	public Double getWidth() {
@@ -25,17 +25,17 @@ public class Rectangle extends Shape {
 		this.width = width;
 	}
 
-	public Double getHeigth() {
-		return heigth;
+	public Double getHeight() {
+		return height;
 	}
 
-	public void setHeigth(Double heigth) {
-		this.heigth = heigth;
+	public void setHeight(Double height) {
+		this.height = height;
 	}
 
 	@Override
 	public double area() {
-		return width * heigth;
+		return width * height;
 	}
 
 }
